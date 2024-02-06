@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weatherApp</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="weatherApp">
+      <div class="container">
+        <!-- search input -->
+        <div class="input-group my-5 w-75 mx-auto rounded-2 position-relative">
+          <input
+            id="search"
+            type="text"
+            class="form-control"
+            placeholder="Find your Location.."
+          />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="row pt-5">
+            <!-- data today -->
+          <div class="col-lg-4 col-md-6 bg-sec-color rounded-4 py-3">
+            <div class="layer rounded-4">
+              <div
+                class="d-flex justify-content-between text-light fs-4"
+                id="today_date"
+              >
+                <p id="today_name">sunday</p>
+                <span>
+                  <span id="day_number_today">20</span>
+                  <span id="month_number_today">may</span>
+                </span>
+              </div>
+              <div class="itemContent">
+                <p id="country_name" class="fs-4">cairo</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="fs-1 temp">
+                    <span id="today_temp">18</span>
+                    <span><sup>o</sup>c </span>
+                  </span>
+                  <img src="img/113.webp" alt="" id="today_img" />
+                </div>
+                <p id="today_condition" class="pt-3 fs-5">Sunny</p>
+                <div
+                  id="item_footer"
+                  class="d-flex justify-content-around pt-5"
+                >
+                  <div class="d-flex">
+                    <img
+                      src="img/245px-Rajapa.svg.png"
+                      alt=""
+                      class="img_footer me-1"
+                    />
+                    <p id="humidity" class="fs-6">20</p>
+                  </div>
+                  <div class="d-flex">
+                    <img src="img/windy.png" alt="" class="img_footer me-1" />
+                    <p id="windy" class="fs-6">30 km/h</p>
+                  </div>
+                  <div class="d-flex">
+                    <img src="img/R.png" alt="" class="img_footer me-1" />
+                    <p id="compass" class="fs-6">East</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- data tomorrow -->
+          <div class="col-lg-4 col-md-6 py-3 text-center rounded-4">
+            <div class="layer2 rounded-4">
+              <div class="tomorrow">
+                <p class="next_day fs-5">monday</p>
+              </div>
+              <div class="tomorrow">
+                <img src="img/116.webp" alt="" class="py-5 tomorrow_img" />
+                <h4>
+                  <span class="next_temp">19.2</span>
+                  <span><sup>o</sup>C</span>
+                </h4>
+                <h5 class="text-muted">
+                  <span class="next_min_temp">10.2</span>
+                  <span><sup>o</sup>C</span>
+                </h5>
+                <p class="next_condition text-primary pb-1">Cloudy</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- data after tomorrow -->
+          <div
+            class="col-lg-4 col-md-6 py-3 text-center bg-sec-color rounded-4"
+          >
+            <div class="layer rounded-4">
+              <div class="tomorrow">
+                <p class="next_day fs-5">Tuesday</p>
+              </div>
+              <div class="tomorrow">
+                <img src="img/113.webp" alt="" class="py-5 tomorrow_img" />
+                <h4>
+                  <span class="next_temp">19.2</span>
+                  <span><sup>o</sup>C</span>
+                </h4>
+                <h5 class="text-muted">
+                  <span class="next_min_temp">10.2</span>
+                  <span><sup>o</sup>C</span>
+                </h5>
+                <p class="next_condition text-primary pb-1">sunny</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

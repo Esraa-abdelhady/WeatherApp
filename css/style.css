@@ -1,0 +1,63 @@
+
+.img_footer
+{
+    width: 25px;
+    height: 25px;
+}
+.tomorrow
+{
+    font-size: .9rem;
+}
+body
+{
+    background-image:linear-gradient(to right, rgba(0, 0, 0, 0.304) , rgba(0, 0, 0, 0.285)), url("/img/sky.jpg");
+    background-position:center center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+
+}
+.temp
+{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.layer
+{
+    padding: 30px;
+    background-color: rgba(0, 213, 255, 0.432);
+
+}
+.layer2
+{
+    background-color:#cff4fc8a ;
+    padding: 30px;
+
+}
+.form-control
+{
+    background-color:#cff4fc8a ;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+.form-control:focus {
+    color:white ;
+    background-color: transparent;
+    border-color: #cff4fc8a;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #cff4fc00;
+}
+::-webkit-input-placeholder{
+    color:white !important;
+    font-size: large !important;
+}
+i{
+    font-size: 20px;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    color: white;
+}
